@@ -13,6 +13,20 @@ body{
     text-align: center;
     font-weight: 700;
     color: rgba(143, 141, 134, 0.293);
+    position: relative; /* Position the element */
+    transform: translateY(100%); /* Initial position off the screen */
+    animation: slideUpTitle 1s ease-in-out forwards; /* Apply animation */
+}
+
+@keyframes slideUpTitle {
+    0% {
+        transform: translateY(100%); /* Starting position off the screen */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* Ending position at the top */
+        opacity: 1;
+    }
 }
 
 .general_container{
@@ -24,6 +38,9 @@ body{
     border-radius: 30px;
     width: 1325px;
     height: 1000px;
+    position: relative; /* Position the element */
+    transform: translateY(100%); /* Initial position off the screen */
+    animation: slideUpTitle 1s ease-in-out forwards; /* Apply animation */
 }
 
 .container_purple{
